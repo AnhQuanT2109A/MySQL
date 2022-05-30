@@ -2,7 +2,11 @@ package database;
 
 import java.sql.*;
 
-public class JdbcInsertTest {
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Collections;
+
+public class JdbcInsertTest2 {
     public static void main(String[] args) {
         try (
                 Connection conn = DriverManager.getConnection(
@@ -10,7 +14,7 @@ public class JdbcInsertTest {
                         "root",""
                 );
                 Statement stmt = conn.createStatement();
-                ) {
+        ) {
             String sqlDelete = "delete from books where id >= 3000 and id < 4000";
 
             System.out.println("The SQL statement is: " + sqlDelete + "\n");
@@ -46,9 +50,10 @@ public class JdbcInsertTest {
                 );
             }
 
-
+  
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
-}
+    }
+
