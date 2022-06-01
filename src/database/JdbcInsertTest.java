@@ -35,7 +35,6 @@ public class JdbcInsertTest {
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
 
-
             ResultSet rset = stmt.executeQuery(strSelect);
             while (rset.next()) {
                 System.out.println(rset.getInt("id") + ","
