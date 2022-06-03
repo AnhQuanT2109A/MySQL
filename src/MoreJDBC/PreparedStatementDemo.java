@@ -20,14 +20,14 @@ public class PreparedStatementDemo {
 
 
             conn.setAutoCommit(false);
-            pstmt.setInt(1,8003);
+            pstmt.setInt(1,80011);
             pstmt.setString(2,"Java 123");
             pstmt.setString(3,"Kevin Jones");
             pstmt.setDouble(4, 12.34);
             pstmt.setInt(5, 88);
             pstmt.addBatch();
 
-            pstmt.setInt(1,8004);
+            pstmt.setInt(1,80012);
             pstmt.setString(2,"Java 456");
             pstmt.addBatch();
 

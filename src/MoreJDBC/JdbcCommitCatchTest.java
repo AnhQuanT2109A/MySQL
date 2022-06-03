@@ -17,8 +17,8 @@ public class JdbcCommitCatchTest {
             try {
                 conn.setAutoCommit(false);
 
-                stmt.executeUpdate("insert into books values(4001, 'Paul Chan', 'Mahjong 102', 4.4, 4)");
-                stmt.executeUpdate("insert into books values(4002, 'Peter Chan', 'Mahjong 102', 4.4, 4)");
+                stmt.executeUpdate("insert into books values(4006, 'Paul Chan', 'Mahjong 102', 4.4, 4)");
+                stmt.executeUpdate("insert into books values(4008, 'Peter Chan', 'Mahjong 102', 4.4, 4)");
                 conn.commit();
             }catch (SQLException ex) {
                 System.out.println("--Rolling back changes--");
