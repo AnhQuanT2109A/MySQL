@@ -63,7 +63,7 @@ public class Task7 {
                         pstmtInsert.executeUpdate();
                         System.out.println("Complete");
                     }else if(ip==2) {
-                        sc.nextLine();
+
                         System.out.println("Nhap id Gia ma Sach muon sua");
                         id = sc.nextInt();
                         System.out.println("Nhap Gia muon sua");
